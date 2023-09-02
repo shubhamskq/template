@@ -1,4 +1,6 @@
-    public function queryshow() {
+<?php
+//Model Code
+public function queryshow() {
        
       $sql = "";
       $sql = $this->db->select('*')
@@ -8,3 +10,13 @@
           
 
   }
+
+//Controller Code
+ $this->load->model('Client_query_model');
+   
+        $result['data']=$this->Client_query_model->queryshow();
+        $this->load->view('admin/list',$result);
+
+
+
+?>
