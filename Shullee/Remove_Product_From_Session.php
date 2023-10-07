@@ -1,6 +1,7 @@
 <?php
 // Javascript Code
 // remove product form session
+<script>
 function delSesProduct(p_id, s_p_id, product_id) {
     $.ajax({
         url: "<?php echo base_url('cart/delSessionProduct'); ?>",
@@ -16,7 +17,7 @@ function delSesProduct(p_id, s_p_id, product_id) {
         }
     });
 }
-
+</script>
 // Controller Code
 //Del Sess Product =============================
 
