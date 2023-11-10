@@ -1,4 +1,6 @@
-  $languages = array(
+<?php
+
+$languages = array(
                                             "english" => "English",
                                             "hindi" => "Hindi",
                                             "assamese" => "Assamese",
