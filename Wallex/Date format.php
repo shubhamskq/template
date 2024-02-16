@@ -1,6 +1,6 @@
 <?php
 
-$newDate = date("d-m-Y", strtotime($originalDate));
+$newDate = date("Y-m-d H:i:s", strtotime($originalDate));
 
 
 ?>
