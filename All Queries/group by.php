@@ -1,4 +1,8 @@
 <?php 
+$parentId = ''; 
+        foreach ($list as $v) {
+            $parentId = empty($parentId)?"'".$v->id."'":$parentId.",'".$v->id."'";
+        }
   $sql = "SELECT parent_id, count(id) as newChat FROM client_query WHERE parent_id in ($parentId) AND type = 'client' AND seen = '0' GROUP BY parent_id  ";
         $dbData = $this->client_model->rawQuery($sql);
         $newChatArr = array();
